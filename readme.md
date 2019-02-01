@@ -18,9 +18,8 @@ Suppose your manager assigned a task for you. You're required to develop a filte
 5. Preferred to use Laravel framework as back-end side.
 
 
--------
 
-## Testing ....
+## 1. Testing ....
 
 To run the app in local machine please 
 -> clone the project in local server in commandline
@@ -65,5 +64,30 @@ http://amanullah.xyz/houses?contract_type=Deposit-3-plus-1-month&rating=4&price=
 
 and as many combination as we want from the field list of the output json.
 
+## 2. UI ....
 
+UI is avoided as per guided here.
+
+## 3.Way of thinking and code
+
+#Problem
+The problem is that we will encounter with a set of filters that we must check for a lot of conditions to add to the query.
+
+Writing a lot of terms will surely reduce the readability of our code and slow down the development process.
+
+Also, we can only use the filters and terms in the same scope and they will not be reusable.
+
+#Solution
+We must Refactor our code! To solve this problem, we need to Refactor our code by replacing many of our conditionals with Polymorphism(Abstract Calss and/or Interface).
+
+Here is the design pattern is explained: 
+https://sourcemaking.com/refactoring/replace-conditional-with-polymorphism
+
+## 4. scalableity and flexibality
+The approach applied here is more scalable and fleibale as per expalined.
+Also index in iplemented in the houses table migration for easch search input field.
+
+## 5. Laravel
+
+I used the laravel 5.7 here for this application.
 
