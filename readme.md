@@ -85,7 +85,7 @@ https://sourcemaking.com/refactoring/replace-conditional-with-polymorphism
 
 ## 4. scalableity and flexibality
 The approach applied here is more scalable and fleibale as per expalined.
-Also index in iplemented in the houses table migration for easch search input field.
+Also index is iplemented in the houses table migration for each search input field.
 
 ## 5. Laravel
 
