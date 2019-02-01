@@ -24,7 +24,7 @@ Suppose your manager assigned a task for you. You're required to develop a filte
 To run the app in local machine please 
 -> clone the project in local server in commandline
 ```
-clone https://github.com/amanullah-1/bayti.git
+git clone https://github.com/amanullah-1/bayti.git
 ```
 and configure the .env file as per your local database configuration
 
