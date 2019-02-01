@@ -23,13 +23,32 @@ Suppose your manager assigned a task for you. You're required to develop a filte
 ## Testing ....
 
 To run the app in local machine please 
--> clone the project in local server and configure the .env file as per your local database.
--> run the migration file and run seeder (or import the sql file given here)
+-> clone the project in local server in commandline
+```
+clone https://github.com/amanullah-1/bayti.git
+```
+and configure the .env file as per your local database configuration
+
+-> run the migration
+```
+php artisan migrate
+```
+
+and run seeder 
+```
+php artisan tinker
+```
+and then 
+```
+factory(\App\House::class, 100)->create()
+```
+
+(or just import the sql file given here: https://github.com/amanullah-1/bayti/blob/master/database/bayti2.sql)
 
 For running the test run following in the command line
 
 ```
-vendor/bin/phpunit HouseTest
+vendor/bin/phpunit tests/Feature/HouseTest.php
 ```
 
 to see the working demo for the required search filter app visit: 
@@ -38,5 +57,13 @@ basic hose liting without any filter:
 
 http://amanullah.xyz/houses
 
-we can check various 
+we can check various filter configuration for e.g: 
+
+http://amanullah.xyz/houses?price=3000
+
+http://amanullah.xyz/houses?contract_type=Deposit-3-plus-1-month&rating=4&price=3000
+
+and as many combination as we want from the field list of the output json.
+
+
 
